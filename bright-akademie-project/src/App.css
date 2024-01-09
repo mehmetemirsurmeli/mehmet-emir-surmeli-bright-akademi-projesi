@@ -32,10 +32,53 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.Nav.Link:hover{
-  opacity: 0.1;
+
+.headertop {
+  width: 100vw;
+  height: 5rem;
+  background-color: #607274;
+  padding: 10px;
+}
+
+.header-body {
+  background-color: #607274;
+}
+
+.NavLink {}
+
+.NavLink:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.Footer {
+  width: 100vw;
+  height: 5rem;
+  background-color: #B2A59B;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-margin {
+  margin-left: 29%;
+}
+
+.Contact-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #DED0B6;
+}
+
+.Contact-left {
+  width:40vw;
+}
+
+.Contact-right {
+  width: 40vw;
 }

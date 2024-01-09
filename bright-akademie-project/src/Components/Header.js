@@ -1,25 +1,28 @@
 import React from 'react'
-import { Container, Nav, NavDropdown, NavLink, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from 'react-bootstrap';
-
+import { Container, Nav, Navbar, NavbarToggle } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <div className='container'>
-                <Navbar bg="primary" data-bs-theme="dark">
+            <div className='headertop'>
+                <Navbar expand="lg" className='header-body'>
                     <Container>
-                        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">Ana Sayfa</Nav.Link>
-                            <Nav.Link href="/">İletişim</Nav.Link>
-                            <Nav.Link href="/">Hakkımızda</Nav.Link>
-                            <Nav.Link href="/">Eğitimler</Nav.Link>
-                            <Nav.Link href="/">Eğitim Detay</Nav.Link>
-                            <Nav.Link href="/">Eğitmenler</Nav.Link>
-                            <Nav.Link href="/">Eğitmen Detay</Nav.Link>
-                        </Nav>
+                        <Navbar.Brand className='text-white fw-bold nav-link'>Bright Akademi</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav>
+                                <NavLink className='text-white ps-5 NavLink nav-link' to="/">Ana Sayfa</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link'>Eğitimler</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link'>Eğitim Detay</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link'>Eğitimenler</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link'>Eğitmen Detay</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link'>Hakkımızda</NavLink>
+                                <NavLink className='text-white ps-5 NavLink nav-link' to="/contact">Contact</NavLink>
+                            </Nav>
+                        </Navbar.Collapse>
                     </Container>
-                </Navbar>
-            </div>
+                </Navbar >
+            </div >
         </>
     )
 }
