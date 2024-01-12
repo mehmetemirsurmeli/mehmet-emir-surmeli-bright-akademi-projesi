@@ -1,55 +1,10 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .headertop {
-  width: 100vw;
+  width: 100%;
   height: 5rem;
-  background-color: #607274;
-  padding: 10px;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
 }
-
-.header-body {
-  background-color: #607274;
-}
-
-.NavLink {}
 
 .NavLink:hover {
   opacity: 0.5;
@@ -57,28 +12,42 @@
 }
 
 .Footer {
-  width: 100vw;
-  height: 5rem;
-  background-color: #B2A59B;
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: 6rem;
+  text-align: center;
+  margin-top: 1%;
+  z-index: 0;
 }
 
-.footer-margin {
-  margin-left: 29%;
+body {}
+
+.contactbg {
 }
 
-.Contact-container {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  background-color: #DED0B6;
+.home {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin: auto;
 }
 
-.Contact-left {
-  width:40vw;
+.egitimdetaybg {
+  background-color: #61dafb;
 }
 
-.Contact-right {
-  width: 40vw;
+body {
+  background: linear-gradient(60deg, #3FC1C9, #FC5185, #364F6B, #F5F5F5);
+  animation: bgAnimationGradient 10s infinite linear;
+  background-size: 600% 600%;
+}
+
+@keyframes bgAnimationGradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
 }
