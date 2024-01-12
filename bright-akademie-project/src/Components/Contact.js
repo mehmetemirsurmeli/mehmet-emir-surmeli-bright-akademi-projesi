@@ -25,53 +25,39 @@ const Contact = () => {
                                     <Form.Control
                                         required
                                         type="text"
-                                        placeholder="First name"
-                                        defaultValue="Mark"
+                                        placeholder="Ad"
+                                        defaultValue="Mehmet Emir"
                                     />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="4" controlId="validationCustom02">
-                                    <Form.Label>Last name</Form.Label>
+                                    <Form.Label>Soyadı :</Form.Label>
                                     <Form.Control
                                         required
                                         type="text"
                                         placeholder="Last name"
-                                        defaultValue="Otto"
+                                        defaultValue="Sürmeli"
                                     />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
-                                <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-                                    <Form.Label>Username</Form.Label>
-                                    <InputGroup hasValidation>
-                                        <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Username"
-                                            aria-describedby="inputGroupPrepend"
-                                            required
-                                        />
-                                        <Form.Control.Feedback type="invalid">
-                                            Please choose a username.
-                                        </Form.Control.Feedback>
-                                    </InputGroup>
-                                </Form.Group>
+
                             </Row>
                             <Row className="mb-3">
                                 <Form.Group as={Col} md="6" controlId="validationCustom03">
                                     <Form.Label>Şehir</Form.Label>
-                                    <Form.Control type="text" placeholder="City" required />
+                                    <Form.Control type="text" placeholder="Şehir" required />
                                     <Form.Control.Feedback type="invalid">
                                         Please provide a valid city.
                                     </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="3" controlId="validationCustom04">
                                     <Form.Label>İlçe</Form.Label>
-                                    <Form.Control type="text" placeholder="State" required />
+                                    <Form.Control type="text" placeholder="İlçe" required />
                                     <Form.Control.Feedback type="invalid">
                                         Please provide a valid state.
                                     </Form.Control.Feedback>
                                 </Form.Group>
-                                
+
                             </Row>
                             <Form.Group className="mb-3">
                                 <Form.Check
@@ -81,14 +67,14 @@ const Contact = () => {
                                     feedbackType="invalid"
                                 />
                             </Form.Group>
-                            <Button type="button">Submit form</Button>
+                            <Button type="button">Gönder</Button>
                         </Form>
                     </Card>
                 </Col>
                 <Col>
-                <Card className='border-0 my-5 p-0 '>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.138299389736!2d29.00424147643903!3d41.04410461721746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a24975fe5d%3A0xa05d7aa13cfcaf89!2sBah%C3%A7e%C5%9Fehir%20%C3%9Cniversitesi%20Wissen%20Akademie!5e0!3m2!1str!2str!4v1704799957683!5m2!1str!2str" width="636" height="500" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </Card>
+                    <Card className='border-0 my-5 p-0 '>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.138299389736!2d29.00424147643903!3d41.04410461721746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a24975fe5d%3A0xa05d7aa13cfcaf89!2sBah%C3%A7e%C5%9Fehir%20%C3%9Cniversitesi%20Wissen%20Akademie!5e0!3m2!1str!2str!4v1704799957683!5m2!1str!2str" width="636" height="500" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </Card>
                 </Col>
             </Row>
 

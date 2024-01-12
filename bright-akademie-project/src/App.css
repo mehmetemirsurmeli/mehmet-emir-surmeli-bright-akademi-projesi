@@ -22,8 +22,7 @@
 
 body {}
 
-.contactbg {
-}
+.contactbg {}
 
 .home {
   width: 100%;
@@ -37,7 +36,7 @@ body {}
 }
 
 body {
-  background: linear-gradient(60deg, #3FC1C9, #FC5185, #364F6B, #F5F5F5);
+  background: linear-gradient(60deg, #3FC1C9, #FC5185, #364F6B, #3282B8);
   animation: bgAnimationGradient 10s infinite linear;
   background-size: 600% 600%;
 }
