@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 .headertop {
   width: 100%;
   height: 5rem;
   padding: 5px;
-  position: relative;
-  z-index: 1;
 }
 
 .NavLink:hover {
@@ -13,16 +13,13 @@
 
 .Footer {
   width: 100%;
-  position: relative;
   height: 6rem;
   text-align: center;
   margin-top: 1%;
   z-index: 0;
 }
 
-body {}
 
-.contactbg {}
 
 .home {
   width: 100%;
@@ -32,13 +29,19 @@ body {}
 }
 
 .egitimdetaybg {
-  background-color: #61dafb;
+  background-color: #31377d;
+  font-weight: 500
+}
+
+.egitimdetaybg h1 {
+  font-weight: 400;
 }
 
 body {
-  background: linear-gradient(60deg, #3FC1C9, #FC5185, #364F6B, #3282B8);
+  background: linear-gradient(75deg, #3FC1C9, #FC5185, #364F6B, #3282B8, #3282B8, #364F6B, #FC5185, #3FC1C9);
   animation: bgAnimationGradient 10s infinite linear;
   background-size: 600% 600%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @keyframes bgAnimationGradient {
@@ -49,4 +52,316 @@ body {
   100% {
     background-position: 100% 0;
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 150px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-items {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.card-items:hover {
+  border: 2px solid #000;
+}
+
+.card-items img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-wrapper span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.developer {
+  background-color: #F7DFF5;
+  color: #B22485;
+}
+
+.card-items h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+
+.card-item:hover .arrow {
+  background: #000;
+  color: #fff;
+}
+
+.buttons {
+  background-color: #31377d;
+
+
+}
+
+.buttons:hover {
+  background-color: #31377d;
+  opacity: 0.9;
+  transition: .5s;
+  color: whitesmoke;
+
+
+}
+
+.text-animation {
+  color: white;
+  top: 50%;
+  left: 50%;
+  padding: 0 40px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.line {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.line:first-child {
+  animation: anim 15s infinite;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+
+  16% {
+    margin-top: -60px;
+
+  }
+
+  33% {
+    margin-top: -120px;
+
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  66% {
+    margin-top: -120px;
+  }
+
+  82% {
+    margin-top: -60px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+
+.home-content {
+  height: 400px;
+}
+
+/*Pricing Section Three Stars Here*/
+.pricing-item {
+  border-radius: 20px;
+  background-color: #31377d;
+  text-align: center;
+  padding: 30px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.pricing-item .tag {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 50px;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
+  background: #202342;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #ffffff;
+  top: 55px;
+  left: -25px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 499px) {
+  .pricing-item .tag {
+    font-size: 20px;
+    width: 140px;
+  }
+}
+
+.pricing-item .pricing-thumb {
+  height: 155px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 499px) {
+  .pricing-item .pricing-thumb {
+    height: 120px;
+  }
+}
+
+.pricing-item .pricing-thumb img {
+  width: auto;
+  height: 100%;
+}
+
+.pricing-item .pricing-content .pricing-header {
+  margin-bottom: 20px;
+}
+
+.pricing-item .pricing-content .pricing-header .title {
+  font-size: 54px;
+  line-height: 64px;
+  margin-top: -20px;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 499px) {
+  .pricing-item .pricing-content .pricing-header .title {
+    font-size: 48px;
+  }
+}
+
+.pricing-item .pricing-content .pricing-header .title sup {
+  top: -.5em;
+  font-weight: 400;
+  font-size: 55%;
+}
+
+.pricing-item .pricing-content .pricing-header .cate {
+  text-transform: capitalize;
+}
+
+.pricing-item .pricing-content ul {
+  margin-bottom: 26px;
+}
+
+.pricing-item .pricing-content ul li {
+  padding: 6px 0 9px;
+  border-bottom: 2px dotted rgba(93, 88, 179, 0.4);
+}
+
+.pricing-item .pricing-content ul li:last-child {
+  border: none;
+}
+
+.pricing-item .pricing-content .button-3 {
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 400;
+  max-width: 250px;
+  margin: 0 auto;
+  border-color: #4943a0;
+}
+
+.color-bau-surec {
+  color: #bdb9f0;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bg-sekilli img {
+  background: -webkit-linear-gradient(0deg, #e2906e 0%, #e83a99 100%);
+  box-shadow: 2.419px 9.703px 12.48px 0.52px rgba(232, 58, 153, 0.5);
+
+  padding: 20px;
+  border-radius: 50%;
+}
+
+
+.bg-sekilli-1 img {
+  background: -webkit-linear-gradient(0deg, #d180dd 0%, #796be8 100%);
+  box-shadow: 2.419px 9.703px 12.48px 0.52px rgba(121, 107, 232, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.bg-sekilli-2 img {
+  background: -webkit-linear-gradient(0deg, #e1358f 0%, #7e6ce7 100%);
+  box-shadow: 4.232px 12.292px 10.56px 0.44px rgba(121, 107, 232, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.why-join {
+  width: 53%;
+
+}
+
+.card-background {
+  background-color: #31377d;
+  padding: 40px;
+  transition: all ease-in-out 5s;
+}
+
+.card-background:hover {
+  background: -webkit-linear-gradient(0deg, #d180dd 0%, #796be8 100%);
+  box-shadow: 2.419px 9.703px 12.48px 0.52px rgba(121, 107, 232, 0.5);
+
+
+
+}
+
+.cards-border {
+  border-radius: 5px;
+}
+
+.egitim-text-color{
+  color:#BDB9F0
 }
