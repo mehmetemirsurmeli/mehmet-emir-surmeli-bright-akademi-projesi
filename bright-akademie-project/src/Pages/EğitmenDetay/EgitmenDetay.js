@@ -27,7 +27,7 @@ const EgitmenDetay = () => {
                         <div class="col-md-3 m-auto text-center">
                             <img width={300} height={300} src={resim1} class="img-fluid rounded-start" alt="..." />
                         </div>
-                        <div class="col-md-8  mt-5">
+                        <div class="col-md-8  mt-5 text-center">
                             <div class="card-body">
                                 <h5 class="card-title text-white display-4 fw-semibold">Mustafa Kemal Atatürk</h5>
                                 <p class="card-text text-white dis">Öğretmenler; Yeni nesli, Cumhuriyetin fedakâr öğretmen ve eğitimcilerini, sizler yetiştireceksiniz ve yeni nesil, sizin eseriniz olacaktır</p>
@@ -43,7 +43,7 @@ const EgitmenDetay = () => {
                         <div class="col-md-3 m-auto text-center">
                             <img width={300} height={300} src={resim4} class="img-fluid rounded-start" alt="..." />
                         </div>
-                        <div class="col-md-8 mt-5">
+                        <div class="col-md-8 mt-5 text-center">
                             <div class="card-body">
                                 <h5 class="card-title text-white display-4 fw-semibold">Mehmet Emir Sürmeli</h5>
                                 <p class="card-text text-white dis">Full Stack Devoloper kendini geliştirmeye kararlı ve hırslı bir öğrencidir.

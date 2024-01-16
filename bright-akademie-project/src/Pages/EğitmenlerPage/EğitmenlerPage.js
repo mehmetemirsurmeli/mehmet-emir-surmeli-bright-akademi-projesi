@@ -14,29 +14,39 @@ const EğitmenlerPage = () => {
                     <Link to="/egitmendetay" class="card-items">
                         <img src={resim2} alt="Card Image" />
                         <span class="developer">Developer</span>
-                        <h3>Daha Fazla Bilgi İçin Tıklayınız...</h3>
+                        <h3 className='text-center'>Engin Niyazi Ergül</h3>
+
+                        <p className='text-dark'>Daha Fazla Bilgi İçin Tıklayınız...</p>
 
                         <div class="arrow">
                             <i class="fas fa-arrow-right card-icon"></i>
                         </div>
                     </Link>
-                    <Link class="card-items" to="/egitmendetay" element={<EgitimDetay />}>
-                        <img src={resim3} alt="Card Image" />
-                        <span class="developer">Developer</span>
-                        <h3>Daha Fazla Bilgi İçin Tıklayınız...</h3>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right card-icon"></i>
-                        </div>
-                    </Link>
-                    <Link to="/egitmendetay" class="card-items">
-                        <img src={resim4} alt="Card Image" />
-                        <span class="developer">Developer</span>
-                        <h3>Daha Fazla Bilgi İçin Tıklayınız...</h3>
+                    <Container className='mb-5'>
+                        <Link class="card-items" to="/egitmendetay" element={<EgitimDetay />}>
+                            <img src={resim3} alt="Card Image" />
+                            <span class="developer">Developer</span>
+                            <h3 className='text-center'>Mustafa Kemal Atatürk</h3>
 
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right card-icon"></i>
-                        </div>
-                    </Link>
+                            <p className='text-dark'>Daha Fazla Bilgi İçin Tıklayınız...</p>
+                            <div class="arrow">
+                                <i class="fas fa-arrow-right card-icon"></i>
+                            </div>
+                        </Link>
+                    </Container>
+                    <Container className='mt-5'>
+                        <Link to="/egitmendetay" class="card-items">
+                            <img src={resim4} alt="Card Image" />
+                            <span class="developer">Developer</span>
+                            <h3 className='text-center'>Mehmet Emir Sürmeli</h3>
+
+                            <p className='text-dark'>Daha Fazla Bilgi İçin Tıklayınız...</p>
+
+                            <div class="arrow">
+                                <i class="fas fa-arrow-right card-icon"></i>
+                            </div>
+                        </Link>
+                    </Container>
                 </div>
 
             </Container >
