@@ -7,7 +7,7 @@ import resim4 from '../Image/mehmet.jpg'
 const EgitmenDetay = () => {
     return (
         <>
-            <Container className='d-flex flex-column justify-content-center align-items-center'>
+            <Container>
                 <div class="card mb-3 m-auto mt-4 bg-transparent border-0 d-flex align-items-center">
                     <div class="row g-0">
                         <div class="col-md-3 m-auto text-center">
