@@ -22,7 +22,7 @@ const EğitmenlerPage = () => {
                             <i class="fas fa-arrow-right card-icon"></i>
                         </div>
                     </Link>
-                    <Container className='mb-5'>
+                
                         <Link class="card-items" to="/egitmendetay" element={<EgitimDetay />}>
                             <img src={resim3} alt="Card Image" />
                             <span class="developer">Developer</span>
@@ -33,8 +33,8 @@ const EğitmenlerPage = () => {
                                 <i class="fas fa-arrow-right card-icon"></i>
                             </div>
                         </Link>
-                    </Container>
-                    <Container className='mt-5'>
+                  
+                  
                         <Link to="/egitmendetay" class="card-items">
                             <img src={resim4} alt="Card Image" />
                             <span class="developer">Developer</span>
@@ -46,7 +46,7 @@ const EğitmenlerPage = () => {
                                 <i class="fas fa-arrow-right card-icon"></i>
                             </div>
                         </Link>
-                    </Container>
+               
                 </div>
 
             </Container >
